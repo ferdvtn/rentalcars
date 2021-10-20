@@ -39,14 +39,17 @@ import { cars, categories } from '~/assets/data.js'
 export default {
   data() {
     return {
-      car: [],
       range: {}
     }
   },
-  beforeMount() {
-    this.car = cars.find((eachCars) => {
-      return eachCars.id == this.$route.params.id
-    });
+  computed: {
+    car() {
+      const data = cars.find((eachCars) => {
+        return eachCars.id == this.$route.params.id
+      })
+
+      return data
+    }
   },
   methods: {
     getCategoryName(id) {

@@ -42,9 +42,10 @@
 
 <script>
 export default {
-  created() {
+  mounted() {
     // set cart to store from localStorage
     const cart = JSON.parse(window.localStorage.getItem('cart'))
+    console.log(cart);
     if (cart != undefined) {
       this.$store.commit('cars/initCart', {cart})
     }
