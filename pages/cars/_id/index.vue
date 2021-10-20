@@ -43,7 +43,7 @@ export default {
       range: {}
     }
   },
-  created() {
+  beforeMount() {
     this.car = cars.find((eachCars) => {
       return eachCars.id == this.$route.params.id
     });

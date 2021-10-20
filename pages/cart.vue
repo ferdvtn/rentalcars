@@ -15,7 +15,7 @@
           <div class="w-full flex-1">
             <p>{{ li.car.name }}</p>
             <h1 class="font-bold antialiased inline-block">{{ li.car.price }}</h1>
-            <p class="text-xs inline-block">/ month</p>
+            <p class="text-xs inline-block">/ week</p>
             <ul class="flex text-xs w-full">
               <li class="w-1/2 ml-1">
                 <div>From:</div>
