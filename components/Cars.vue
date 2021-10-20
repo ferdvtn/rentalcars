@@ -17,7 +17,7 @@
               <h3>{{ car.name }}</h3>
               <p class="text-xs opacity-80">{{ categoryName(car.category) }}</p>
               <p class="mt-3 font-bold antialiased inline">Rp. {{ car.price }}</p>
-              <p class="text-xs opacity-80 inline">/ m</p>
+              <p class="text-xs opacity-80 inline">/ w</p>
             </div>
 
             <div class="text-xs flex justify-center items-center space-x-1 absolute top-1 left-1 bg-gradient-to-r from-pink-500 to-purple-500 py-1 px-2 rounded-lg">
